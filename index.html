@@ -1,0 +1,133 @@
+<！doctype html>
+<超文本标记语言 朗="zh-CN">
+<头>
+  <元 字符集="UTF-8">
+  <元 姓名="视口" 内容="宽度=设备宽度，初始比例=1.0">
+  <标题>星辰领域 - 我的数字空间</标题>
+  <链接 rel="样式表" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <链接 rel="样式表" href="style.css">
+  <链接 rel="清单" href="manifest.json">
+  <元 姓名="主题-颜色" 内容="#0a0a1a">
+</头>
+<身体>
+  <! -- 粒子背景画布 -->
+  <帆布 身份标识="粒子画布"></帆布>
+  
+  <! -- 音频播放器 -->
+  <div 班级="音频容器">
+    <音频 身份标识="bg-音乐" 环 自动播放>
+      <来源 src="音乐/ambient.mp3" 类型="音频/mpeg">
+    </音频>
+    <按钮 身份标识="音乐控制" 班级="音频-btn脉冲">
+      <我 班级="fas fa音乐"></我>
+    </按钮>
+    <输入 类型="范围" 身份标识="音量控制" 最小值="0" 最大值="1" 步="0.1" 价值="0.7">
+  </div>
+
+  <! -- 主容器 -->
+  <div 班级="容器">
+    <！--3D导航菜单-->
+    <NAV 班级="主导航">
+      <UL>
+        <锂><一个 href="#home" 班级="导航项目已激活" 数据工具提示="主页"><我 班级="fas fa-home"></我></一个></锂>
+        <锂><一个 href="#关于" 班级="导航项目" 数据工具提示="关于"><我 班级="fas fa用户"></我></一个></锂>
+        <锂><一个 href="#投资组合" 班级="导航项目" 数据工具提示="作品"><我 班级="fas fa-公文包"></我></一个></锂>
+        <锂><一个 href="#blog" 班级="导航项目" 数据工具提示="博客"><我 班级="fas fa-book"></我></一个></锂>
+        <锂><一个 href="#联系人" 班级="导航项目" 数据工具提示="联系"><我 班级="fas fa-信封"></我></一个></锂>
+      </UL>
+    </NAV>
+
+    <! -- 主内容区 -->
+    <主要的>
+      <! -- 首页部分 -->
+      <部分 身份标识="主页" 班级="页面激活">
+        <div 班级="英雄内容">
+          <H1 班级="故障" 数据-文本="星辰领域">星辰领域</H1>
+          <p 班级="打字机">探索我的数字宇宙<跨度 班级="光标">|</跨度></p>
+          <div 班级="社交链接">
+            <一个 href="#" 班级="社交图标悬停发光"><我 班级="fab fa-Github"></我></一个>
+            <一个 href="#" 班级="社交图标悬停发光"><我 班级="fab fa-linkedin"></我></一个>
+            <一个 href="#" 班级="社交图标悬停发光"><我 班级="fab fa-witter"></我></一个>
+            <一个 href="#" 班级="社交图标悬停发光"><我 班级="fab fa-instagram"></我></一个>
+          </div>
+          <按钮 班级="cta-btn悬停-3d">开始探索</按钮>
+        </div>
+        <div 班级="浮动元素">
+          <div 班级="浮动元件元件-1"></div>
+          <div 班级="浮动元件元件-2"></div>
+          <div 班级="浮动元件元件3"></div>
+        </div>
+      </部分>
+
+      <! -- 关于部分 -->
+      <部分 身份标识="关于" 班级="页面">
+        <div class="section-header">
+          <h2>关于我</h2>
+          <div class="divider"></div>
+        </div>
+        <div class="about-grid">
+          <div class="about-card card-3d">
+            <div class="card-front">
+              <img src="images/avatar.jpg" alt="我的头像" class="avatar">
+              <h3>数字创作者</h3>
+            </div>
+            <div class="card-back">
+              <p>前端开发者 & UI设计师</p>
+              <p>热爱创造沉浸式体验</p>
+            </div>
+          </div>
+          <div class="skills-container">
+            <div class="skill-item">
+              <div class="skill-bar" data-level="90">HTML/CSS</div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-bar" data-level="85">JavaScript</div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-bar" data-level="80">UI/UX</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 作品集部分 -->
+      <section id="portfolio" class="page">
+        <div class="section-header">
+          <h2>我的作品</h2>
+          <div class="divider"></div>
+        </div>
+        <div class="portfolio-grid">
+          <div class="portfolio-item hover-3d">
+            <img src="images/project1.jpg" alt="项目1">
+            <div class="item-overlay">
+              <h3>银河导航系统</h3>
+              <p>3D宇宙探索界面</p>
+            </div>
+          </div>
+          <!-- 更多项目... -->
+        </div>
+      </section>
+    </main>
+
+    <!-- 分享按钮 -->
+    <div class="share-container">
+      <button id="share-btn" class="share-btn hover-glow">
+        <i class="fas fa-share-alt"></i>
+      </button>
+      <div class="share-options">
+        <a href="#" class="share-option" data-platform="weibo"><i class="fab fa-weibo"></i></a>
+        <a href="#" class="share-option" data-platform="wechat"><i class="fab fa-weixin"></i></a>
+        <a href="#" class="share-option" data-platform="twitter"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 加载动画 -->
+  <div class="loader">
+    <div class="loader-spinner"></div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+  </html>
